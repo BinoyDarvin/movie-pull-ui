@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap')
+
+@font-face 
+    font-family: 'Proxima Nova'
+    src: url('../assets/Proxima Nova Bold.otf')
+
+
+@mixin input-style
+    color: #404040
+    font-weight: 500
+    padding: 0px 20px
+    width: 450px
+    height: 60px
+    border: none
+    outline: none
+    background-color: #FFF
+    border-radius: 2px
+    box-shadow: 0 10px 20px -7px rgba(39,48,54,0.05)
+    margin-top: 12px 
+   
+    
+.section
+    display: flex
+
+.container-one
+    background-color: #F2F4F5
+    height: 100vh
+    width: 100vw
+    p
+        margin-left: 5%
+
+.section-one
+    p
+        color:#8c8c8c
+
+.section-two
+    align-items : center
+    flex-direction: column
+
+    h1
+        
+        font-family: Proxima Nova
+        font-weight: 800
+        font-size: 45px
+        text-align: center
+
+    
+        
+        
+
+
+    p
+        font-family: Proxima Nova
+        text-align: center
+        font-size: 19px
+        display: block
+        font-weight: 500
+        margin-top: -25px
+        margin-bottom: 30px
+        color: #8c8c8c
+        width: 100%
+        
+
+.section-three
+    
+    justify-content : center
+    margin-bottom : 20px
+
+    .tabs
+        text-align: center
+        // border-bottom: 7px solid #FCE141
+        width: 200px
+        font-family: 'Proxima Nova'
+        cursor: pointer
+        transition : all 150ms ease-in-out
+
+        &:hover
+            border-bottom: 7px solid #FCE141 !important    
+.no-border
+    border: none !important
+
+.section-four
+    flex-direction: column
+    align-items: center
+    
+
+
+.input-small
+    @include input-style
+
+.input-big
+    @include input-style
+    border: none
+    height: 200px    
+    padding-top: 20px
+    resize: none
+
+.btn-1 
+
+    display: block
+    margin-top: 4%
+    background: #05c46b
+    color: #ffffff
+    cursor: pointer
+    font-size: 16px
+    padding: 12px
+    border: 0
+    transition: all 0.5s
+    border-radius: 5px
+    width: auto
+    position: relative
+    &:hover 
+        background: #05c46b
+        transition: all 0.5s
+        border-radius: 4px
+        box-shadow: 0px 6px 15px #b8e994
+        padding: 13px
+
+.section-six
+    display: block
+    margin-top: 30px
+    h3
+        text-align: center
+        margin: 0 auto
+        display: block
+        font-size: 26px
+        border-bottom: 7px solid #FCE141 !important
+        width: 150px
+        color: #555
+
+    p
+        color: #555
+        display: block
+        width: 40%
+        margin: 0 auto
+        margin-top: 2%
+        line-height: 25px
+
+$breakpoint-tablet: 768px
+@media (max-width: $breakpoint-tablet)
+    .section-six
+        p
+            width: 90%
+        
